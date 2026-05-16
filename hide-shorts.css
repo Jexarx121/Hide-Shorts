@@ -1,0 +1,15 @@
+/* Hide shorts sidemenu link */
+#endpoint[title="Shorts"] {
+    display: none !important;
+}
+
+/* Hide section on homepage */
+ytd-rich-section-renderer:has(a[href*="/shorts"]) {
+    display: none !important;
+}
+
+/* Hide shorts on search results */
+a[href*='/shorts/'],
+.ytGridShelfViewModelHost {
+    display: none !important;
+}

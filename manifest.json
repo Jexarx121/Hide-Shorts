@@ -1,0 +1,29 @@
+{
+    "manifest_version": 3,
+    "name": "Hide Shorts",
+    "version": "1.0",
+    "description": "Hides youtube shorts section on desktop.",
+    "icons": {
+        "48": "assets/icon.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "id": "hide_shorts@mozilla.org",
+            "data_collection_permissions": {
+                "required": [
+                    "none"
+                ]
+            }
+        }
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "*://*.youtube.com/*"
+            ],
+            "css": [
+                "hide-shorts.css"
+            ]
+        }
+    ]
+}
