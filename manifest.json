@@ -16,10 +16,23 @@
             }
         }
     },
+    "permissions": [
+        "storage",
+        "tabs"
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "48": "assets/icon.png"
+        }
+    },
     "content_scripts": [
         {
             "matches": [
                 "*://*.youtube.com/*"
+            ],
+            "js": [
+                "content.js"
             ],
             "css": [
                 "hide-shorts.css"
