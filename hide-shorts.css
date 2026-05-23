@@ -1,15 +1,21 @@
-/* Hide shorts sidemenu link */
+/* Side menu */
 .hide-shorts-enabled #endpoint[title="Shorts"] {
     display: none !important;
 }
 
-/* Hide section on homepage */
-.hide-shorts-enabled ytd-rich-section-renderer:has(a[href*="/shorts"]) {
+/* Homepage section */
+.hide-shorts-enabled:not(.on-subscriptions-class) ytd-rich-section-renderer:has(a[href*="/shorts"]) {
     display: none !important;
 }
 
-/* Hide shorts on search results */
-.hide-shorts-enabled a[href*='/shorts/'],
-.hide-shorts-enabled .ytGridShelfViewModelHost {
+/* Search results */
+.hide-shorts-enabled:not(.on-subscriptions-class) a[href*='/shorts/'],
+.hide-shorts-enabled:not(.on-subscriptions-class) .ytGridShelfViewModelHost {
+    display: none !important;
+}
+
+/* Subscriptions feed — needs both toggles */
+.hide-shorts-enabled.hide-shorts-subscription-enabled.on-subscriptions-class ytd-rich-item-renderer:has(a[href*='/shorts/']),
+.hide-shorts-enabled.hide-shorts-subscription-enabled.on-subscriptions-class ytd-rich-section-renderer:has(a[href*="/shorts"]) {
     display: none !important;
 }

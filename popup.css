@@ -1,7 +1,7 @@
 body {
     font-family: sans-serif;
     padding: 12px;
-    width: 180px;
+    width: 220px;
     background: #18191b;
 }
 
@@ -10,6 +10,10 @@ body {
     align-items: center;
     justify-content: space-between;
     color: #fff;
+}
+
+.row:first-child {
+    margin-bottom: 8px;
 }
 
 .switch {
