@@ -36,7 +36,8 @@
             ],
             "css": [
                 "hide-shorts.css"
-            ]
+            ],
+            "run_at": "document_start"
         }
     ]
 }

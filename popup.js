@@ -4,10 +4,11 @@ const subscriptionRow = document.getElementById('subscription');
 
 browser.storage.local.get({ enabled: true }, ({ enabled }) => {
     toggle.checked = enabled;
+    subscriptionRow.style.display = enabled ? 'flex' : 'none';
 });
 
 // Hiding in subscriptions is false by default
-browser.storage.local.get({ hideInSubscriptions: false }, ({ hideInSubscriptions }) => {
+browser.storage.local.get({ hideInSubscriptions: true }, ({ hideInSubscriptions }) => {
     toggleSubscription.checked = hideInSubscriptions;
 })
 
