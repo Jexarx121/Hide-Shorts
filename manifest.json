@@ -20,6 +20,9 @@
         "storage",
         "tabs"
     ],
+    "host_permissions": [
+        "*://*.youtube.com/*"
+    ],
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
