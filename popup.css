@@ -55,3 +55,7 @@ input:checked+.slider {
 input:checked+.slider::before {
     transform: translateX(18px);
 }
+
+#scroll-outer-container:has(ytm-shorts-lockup-view-model-v2) {
+    display: none;
+}

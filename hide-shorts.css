@@ -19,3 +19,7 @@
 .hide-shorts-enabled.hide-shorts-subscription-enabled.on-subscriptions-class ytd-rich-section-renderer:has(a[href*="/shorts"]) {
     display: none !important;
 }
+
+#scroll-outer-container:has(ytm-shorts-lockup-view-model-v2) {
+    display: none !important;
+}
